@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
  * main - This function puts some string to stdout
- * Return - 0 if the function executes successfully
+ *
+ * Return: 0 if the function executes successfully
  */
 int main(void)
 {
