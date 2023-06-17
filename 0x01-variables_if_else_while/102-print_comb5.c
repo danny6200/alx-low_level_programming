@@ -11,9 +11,9 @@ int main(void)
 	int m;
 	int sep = 0;
 
-	for (n = 0; n < 99; n++)
+	for (n = 0; n <= 99; n++)
 	{
-		for (m = n + 1; m < 99; m++)
+		for (m = n + 1; m <= 99; m++)
 		{
 			int t1 = n / 10;
 			int u1 = n % 10;
