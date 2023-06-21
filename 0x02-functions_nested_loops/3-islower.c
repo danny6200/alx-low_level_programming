@@ -2,6 +2,7 @@
 /**
  * _islower - checks if a character is a lower case alphabetic
  * character
+ *@c: The character to be checked. 
  *
  * Return: 1 if true and 0 if false.
  */
