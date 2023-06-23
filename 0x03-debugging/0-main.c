@@ -5,7 +5,8 @@
 * Return: 0
 */
 
-int main(void)
+#define main test
+int test(void)
 {
 	int i;
 
