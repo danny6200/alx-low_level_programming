@@ -5,31 +5,15 @@
  *
  * Return: nothing
  */
-int _strlen(char *s)
-{
-	int length = 0;
-
-	while (*s != '\0')
-	{
-		length++;
-		s++;
-	}
-	return (length);
-}
-
 void print_rev(char *s)
 {
-	int length;
+	int length = 0;
 	int i;
-	
-	length = _strlen(s);
 
-	if (length == 0)
-		return;
+	while (s[length] != '\0')
+		length++;
 
 	for (i = length - 1; i >= 0; i--)
-	{
 		_putchar(*(s + i));
-	}
 	_putchar('\n');
 }
