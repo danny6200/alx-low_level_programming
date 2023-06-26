@@ -5,11 +5,23 @@
  *
  * Return: nothing
  */
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while (*s != '\0')
+	{
+		length++;
+		s++;
+	}
+	return (length);
+}
+
 void print_rev(char *s)
 {
 	int length;
 	int i;
-
+	
 	length = _strlen(s);
 
 	if (length == 0)
