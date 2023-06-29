@@ -3,6 +3,7 @@
  * _strncat - concats two strings up to n character of str2
  * @dest:holds destination address for concat result
  * @src: holds address for str 2
+ * @n: no of bytes to concat
  *
  * Return: p, pointer to pointer dest
  */
