@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcmp(char *s1, char *s2) - compares two strings
+ * _strcmp - compares two strings
  * @s1: points to first string
  * @s2: points to second string
  *
@@ -14,5 +14,5 @@ int _strcmp(char *s1, char *s2)
 		s2++;
 	}
 
-	return *(unsigned char*)s1 - *(unsigned char*)s2;
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
