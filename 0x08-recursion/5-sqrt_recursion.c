@@ -1,5 +1,5 @@
 /**
- * square_root_recursion - finds the integral part of
+ * square_root_recursive - finds the integral part of
  * the square root of a number
  * @n: number whose square root is to be computed
  * @start: determines the beginning of the search
