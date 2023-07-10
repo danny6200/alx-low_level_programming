@@ -8,8 +8,11 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
-	int cents = atoi(argv[1]);
-	int coins = 0;
+	int cents;
+	int coins[] = {25, 10, 5, 2, 1};
+	int count = 0;
+	int i = 0;
+	int numCoins = sizeof(coins) / sizeof(coins[0]);
 
 	if (argc != 2)
 	{
@@ -17,32 +20,21 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	if (cents < 0)
+	if (argv[1][0] == '-')
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	coins += cents / 25;
+	cents = atoi(argv[1]);
+	
+	for (i = 0; i < numCoins; i++)
+	{
+		count += cents / coins[i];
+		cents = cents % coins[i];
+	}
 
-	cents = cents % 25;
-
-	coins += cents / 10;
-
-	cents = cents % 10;
-
-	coins += cents / 5;
-
-	cents = cents % 5;
-
-	coins += cents / 2;
-
-	cents = cents % 2;
-
-	coins += cents / 1;
-
-	printf("%d\n", coins);
+	printf("%d\n", count);
 
 	return (0);
 }
-
