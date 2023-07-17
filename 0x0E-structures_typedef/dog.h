@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+ * struct dog - is  dog data type with 3 elements
+ * @name: first element
+ * @age: second element
+ * @owner: third element
+ */
 struct dog
 {
 	char *name;
