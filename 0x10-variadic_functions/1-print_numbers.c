@@ -1,5 +1,5 @@
 /**
- * print_number - prints a sequence of integers passed to it
+ * print_numbers - prints a sequence of integers passed to it
  * @separator: separates any two given numbers in the sequence
  * @n: number of arguments passed
  *
@@ -16,7 +16,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	if (n == 0)
+	{
+		printf('\n');
 		return;
+	}
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
