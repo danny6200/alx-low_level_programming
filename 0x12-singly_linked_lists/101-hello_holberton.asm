@@ -16,5 +16,5 @@ main:
 	call printf
 
 	mov rsp, rbp
-	pop rb
+	pop rbp
 	ret
