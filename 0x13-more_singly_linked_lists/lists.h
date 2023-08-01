@@ -3,7 +3,7 @@
 #include <stddef.h>
 /**
  * struct node - a user defined type for node
- * @data: data part of the node
+ * @n: data part of the node
  * @next: link part of the node
  *
  */
