@@ -24,6 +24,6 @@ size_t print_listint(const listint_t *h)
 		count++;
 		tmp = tmp->next;
 	}
-	free(tmp);
+	/*free(tmp);*/
 	return (count);
 }
