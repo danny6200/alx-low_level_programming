@@ -23,14 +23,15 @@ void print_binary(unsigned long int n)
 	{
 		mask = 1UL << (numBit - i);
 		bit = mask & n;
+
+		if (!bit && non_zero == 0)
+			continue;
 		if (bit)
 		{
 			_putchar('1');
 			non_zero++;
 		}
-		else if (!bit && non_zero > 0)
+		if (!bit && non_zero > 0)
 			_putchar('0');
-		else
-			continue;
 	}
 }
