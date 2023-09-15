@@ -2,7 +2,7 @@
  * dlistint_len - returns the number of nodes in a dll
  * @h: points to the head node
  *
- * Returns: number of nodes
+ * Return: number of nodes
  */
 #include "lists.h"
 
