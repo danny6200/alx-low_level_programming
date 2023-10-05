@@ -1,7 +1,8 @@
 /**
  * key_index - returns the index on the hash 
  * table for a given key.
- * @str: string used to generate hash value
+ * @key: string whose index is required
+ * @size: size of the hash table
  *
  * Return: hash value
  */
