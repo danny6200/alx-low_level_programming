@@ -9,13 +9,11 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-hash_table_t *ht = NULL;
+    hash_table_t *ht = NULL;
 
-ht = malloc(sizeof(hash_node_t) * size);
-
-if (ht == NULL)
-{
-return (NULL);
-}
-return (ht);
+    ht = malloc(sizeof(hash_node_t) * size);
+    if (ht == NULL)
+        return (NULL);
+    else
+        return (ht);
 }
