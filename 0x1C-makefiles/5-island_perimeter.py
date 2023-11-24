@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-	Calculate perimeter of an island
+    Calculate perimeter of an island
 """
 
 
 def island_perimeter(grid):
     """
-	    Calculate the perimeter of an island in a grid
+        Calculate the perimeter of an island in a grid
 
-	    Args:
-	    	grid (list[list[int]]): A grid where 1 represents
-					land and 0 represents water.
-	    Returns:
-		int: The perimeter of the island.
+        Args:
+            grid (list[list[int]]): A grid where 1 represents
+                                    land and 0 represents water.
+        Returns:
+            int: The perimeter of the island.
     """
 
     perimeter = 0
